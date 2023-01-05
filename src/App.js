@@ -15,13 +15,13 @@ function App() {
           else {setSeconds('0'+(parseInt(seconds)+1).toString())}
       }
         else {
-            if(minutes !== 59) {
+            if(minutes !== '59') {
               if(minutes >= 9){setMinutes((parseInt(minutes)+1).toString())}
               else {setMinutes('0'+(parseInt(minutes)+1).toString())}
               setSeconds('00')
             }
             else{
-                if(hours !== 23) {
+                if(hours !== '23') {
                   if(hours >= 9){setHours((parseInt(hours)+1).toString())}
                   else {setHours('0'+(parseInt(hours)+1).toString())}
                   setMinutes('00')
